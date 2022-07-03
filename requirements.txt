@@ -99,6 +99,7 @@ nl==0.102
 nltk==3.5
 notebook==6.1.5
 numba==0.54.0
+numpy==1.19.4
 oauthlib==3.1.0
 opencv-python==4.6.0.66
 opt-einsum==3.3.0
