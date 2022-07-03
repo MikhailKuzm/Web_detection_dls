@@ -1,0 +1,65 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6759b8eb-58ea-4594-96bb-7ae6d7610f1b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Web_detection</Name>
+    <RootNamespace>Web_detection</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app_start.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Face_detect\launch_face_detection.py" />
+    <Compile Include="Face_detect\model_structure.py" />
+    <Compile Include="Face_detect\training.py" />
+    <Compile Include="Face_detect\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Face_detect\" />
+    <Folder Include="Face_detect\.vs\" />
+    <Folder Include="Face_detect\.vs\Face_detect\" />
+    <Folder Include="Face_detect\.vs\Face_detect\v16\" />
+    <Folder Include="Face_detect\__pycache__\" />
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Face_detect\.vs\ProjectSettings.json" />
+    <Content Include="Face_detect\.vs\slnx.sqlite" />
+    <Content Include="Face_detect\.vs\VSWorkspaceState.json" />
+    <Content Include="Face_detect\Accuracy.png" />
+    <Content Include="Face_detect\haarcascade_frontalface_default.xml" />
+    <Content Include="Face_detect\model_epoch30.pth" />
+    <Content Include="Face_detect\MSE.png" />
+    <Content Include="Face_detect\README.md" />
+    <Content Include="Face_detect\__pycache__\launch_face_detection.cpython-39.pyc" />
+    <Content Include="Face_detect\__pycache__\model_structure.cpython-39.pyc" />
+    <Content Include="templates\index.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
