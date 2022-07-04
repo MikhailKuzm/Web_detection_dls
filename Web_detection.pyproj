@@ -41,6 +41,8 @@
     <Folder Include="templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
     <Content Include="Face_detect\.vs\ProjectSettings.json" />
     <Content Include="Face_detect\.vs\slnx.sqlite" />
     <Content Include="Face_detect\.vs\VSWorkspaceState.json" />
@@ -51,6 +53,8 @@
     <Content Include="Face_detect\README.md" />
     <Content Include="Face_detect\__pycache__\launch_face_detection.cpython-39.pyc" />
     <Content Include="Face_detect\__pycache__\model_structure.cpython-39.pyc" />
+    <Content Include="Procfile" />
+    <Content Include="requirements.txt" />
     <Content Include="templates\index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
