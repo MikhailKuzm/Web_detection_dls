@@ -55,6 +55,7 @@
     <Content Include="Face_detect\__pycache__\model_structure.cpython-39.pyc" />
     <Content Include="Procfile" />
     <Content Include="requirements.txt" />
+    <Content Include="runtime.txt" />
     <Content Include="templates\index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
