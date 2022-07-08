@@ -55,11 +55,11 @@ def func():
             frame = cv2.putText(frame, gender_dict[gender],(x+w,y), font, fontScale,(255,255,255),1, cv2.LINE_AA)
             frame = cv2.putText(frame, etn_dict[etn], (x+w,y+25), font, fontScale,(255,255,255),1, cv2.LINE_AA)
             if first_time:
-                frame = cv2.putText(frame, f"Возраст: {int(torch.round(age))}", (x+w,y+50), font, fontScale,(255,255,255),1, cv2.LINE_AA)
+                frame = cv2.putText(frame, f"Возраст: {int(torch.round(age))+3}", (x+w,y+50), font, fontScale,(255,255,255),1, cv2.LINE_AA)
                 prev_age = age
                 first_time = False
             else: 
-                frame = cv2.putText(frame, f"Возраст: {int(torch.round(prev_age))}", (x+w,y+50), font, fontScale,(255,255,255),1, cv2.LINE_AA)
+                frame = cv2.putText(frame, f"Возраст: {int(torch.round(prev_age))+3}", (x+w,y+50), font, fontScale,(255,255,255),1, cv2.LINE_AA)
 
             if time.time() - prev_time > 2: 
                 prev_age = age  
